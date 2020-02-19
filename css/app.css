@@ -1,0 +1,23 @@
+/* cache les boutons radio des avatars */
+input[name="avatar"] {
+    display: none;
+}
+
+.avatar-radio {
+    border: 3px solid transparent; /* pour pas que ça bouge */
+    opacity: 0.9;
+    width: 60px;
+}
+
+.avatar-radio:hover {
+    opacity: 1.0;
+}
+
+/* je cible les img d'avatar étant à côté d'un input coché ! */
+input[name="avatar"]:checked + .avatar-radio {
+    border: 3px solid tomato;
+    opacity: 1.0;
+}
+footer{
+    text-align: center;
+}
